@@ -27,10 +27,14 @@ public class ApahceCommonsCliCode {
 		options.addOption("t", false, "display current time(no input needed");
 		options.addOption("p", true, "print the input");
 
+		
+		
 		// 3. create command line object with parser (recommended : DefaultParser)
 		CommandLineParser parser = new DefaultParser();
 		CommandLine cmd = parser.parse(options, args);
 
+		
+		
 		// 2-1. 
 		// if you want to retrieve the argument value passed by user with option 'p',
 		// code goes like this :
