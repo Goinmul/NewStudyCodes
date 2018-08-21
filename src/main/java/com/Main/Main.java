@@ -26,6 +26,7 @@ import com.Exception.ExceptionCode;
 2. at the directory you chose, git clone the remote repository(in github)
 3. on git bash, type belows :
 $ git remote add origin https://github.com/Goinmul/NewCodes.git
+(you might need to change the origin, then use : $ git remote set-url origin https://github.com/Goinmul/RepoName.git)
 $ git push -u origin master
  * 
  * 
