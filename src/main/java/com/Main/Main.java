@@ -1,9 +1,12 @@
 package com.Main;
 
-import java.io.File;
+import java.io.IOException;
 
 import com.ArrayList.ArrayListCode;
 import com.Exception.ExceptionCode;
+import com.File.FileCreateAndDelete;
+import com.File.FileMoveAndRename;
+import com.File.FilePathStudy;
 /**
  * <starting a project connected to github>
 
@@ -35,24 +38,24 @@ $ git push -u origin master
  */
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		ArrayListCode arrayList = new ArrayListCode();
 		ExceptionCode exception = new ExceptionCode();
-
+		FileCreateAndDelete file = new FileCreateAndDelete();
+		FileMoveAndRename moveOrRename = new FileMoveAndRename();
+		FilePathStudy pathStudy = new FilePathStudy();
+		
 		// run
 
 		//arrayList.arrayListExample1();
 		//exception.try_catch_example1();
 		//exception.throw_catch_example1();
-		
-		File file = new File("d:/my_file_test.csv");
-		if(file.exists())
-		{
-			System.out.println("path exists.");
-		}
-		else
-			System.out.println("path doesn't exist.");
+		//file.file_create();
+		//file.file_delete();
+		//moveOrRename.move_or_rename();
+		pathStudy.file_path_curiousity();
+
 	}
-	
+
 }
